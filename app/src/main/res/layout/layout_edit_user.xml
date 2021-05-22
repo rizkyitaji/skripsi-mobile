@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_rounded_top_bluesky"
+    android:orientation="vertical"
+    android:paddingVertical="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TextView.LightBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:drawablePadding="12dp"
+            android:text="@string/user"
+            app:drawableStartCompat="@drawable/ic_baseline_create"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_baseline_close"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginVertical="8dp"
+        android:background="@color/colorWhite" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:paddingVertical="8dp"
+            android:text="@string/nama"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/et_name" />
+
+        <TextView
+            android:id="@+id/space1"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="8dp"
+            android:paddingVertical="7dp"
+            android:text="@string/space"
+            app:layout_constraintStart_toEndOf="@id/prodi"
+            app:layout_constraintTop_toTopOf="@id/et_name" />
+
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="12dp"
+            android:inputType="textCapWords"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/textId"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:paddingVertical="8dp"
+            android:text="@string/npm"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/et_id" />
+
+        <TextView
+            android:id="@+id/space2"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="8dp"
+            android:paddingVertical="7dp"
+            android:text="@string/space"
+            app:layout_constraintStart_toEndOf="@id/prodi"
+            app:layout_constraintTop_toTopOf="@id/et_id" />
+
+        <EditText
+            android:id="@+id/et_id"
+            style="@style/EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="12dp"
+            android:inputType="number"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space2"
+            app:layout_constraintTop_toBottomOf="@id/et_name"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/textProdi"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:paddingVertical="8dp"
+            android:text="@string/program_studi"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_prodi" />
+
+        <TextView
+            android:id="@+id/prodi"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:paddingVertical="8dp"
+            android:text="@string/program_studi"
+            android:textAllCaps="true"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_prodi" />
+
+        <TextView
+            android:id="@+id/space3"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="8dp"
+            android:paddingVertical="7dp"
+            android:text="@string/space"
+            app:layout_constraintStart_toEndOf="@id/prodi"
+            app:layout_constraintTop_toTopOf="@id/btn_prodi" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_prodi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/shape_bg_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space3"
+            app:layout_constraintTop_toBottomOf="@id/et_id">
+
+            <TextView
+                android:id="@id/tv_prodi"
+                style="@style/Text.Dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:text="@string/choose"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                app:drawableEndCompat="@drawable/ic_expand_more"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textPass"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:paddingVertical="8dp"
+            android:text="@string/password"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/et_pass" />
+
+        <TextView
+            android:id="@+id/space4"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="8dp"
+            android:paddingVertical="7dp"
+            android:text="@string/space"
+            app:layout_constraintStart_toEndOf="@id/prodi"
+            app:layout_constraintTop_toTopOf="@id/et_pass" />
+
+        <EditText
+            android:id="@+id/et_pass"
+            style="@style/EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="12dp"
+            android:inputType="text"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space4"
+            app:layout_constraintTop_toBottomOf="@id/btn_prodi"
+            tools:ignore="Autofill,LabelFor" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/Button.First"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="24dp"
+        android:text="@string/submit" />
+</LinearLayout>

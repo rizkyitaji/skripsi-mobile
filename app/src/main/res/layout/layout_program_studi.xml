@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_bg_white"
+    android:orientation="vertical"
+    android:paddingVertical="8dp">
+
+    <TextView
+        android:id="@+id/tv_choose"
+        style="@style/Text.DarkBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:text="@string/choose"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginVertical="8dp"
+        android:background="@color/colorGrey" />
+
+    <TextView
+        android:id="@+id/tv_ti"
+        style="@style/Text.DarkBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_selector_white"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        android:text="@string/teknik_informatika"
+        app:drawableStartCompat="@drawable/ic_baseline_lens" />
+
+    <TextView
+        android:id="@+id/tv_te"
+        style="@style/Text.DarkBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_selector_white"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        android:text="@string/teknik_elektro"
+        app:drawableStartCompat="@drawable/ic_baseline_lens" />
+
+    <TextView
+        android:id="@+id/tv_tm"
+        style="@style/Text.DarkBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_selector_white"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        android:text="@string/teknik_mesin"
+        app:drawableStartCompat="@drawable/ic_baseline_lens" />
+
+</LinearLayout>

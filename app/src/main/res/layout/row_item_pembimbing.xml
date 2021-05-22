@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/shape_selector_rounded_white"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_dosen"
+        style="@style/Text.BlueBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/nama_dosen"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_exp"
+        style="@style/Text.Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/bidang_keahlian"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_dosen" />
+
+    <TextView
+        android:id="@+id/space"
+        style="@style/Text.Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/space"
+        app:layout_constraintStart_toEndOf="@id/tv_exp"
+        app:layout_constraintTop_toBottomOf="@id/tv_dosen" />
+
+    <TextView
+        android:id="@+id/tv_expertise"
+        style="@style/Text.Blue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:text="@string/bidang_keahlian"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/space"
+        app:layout_constraintTop_toTopOf="@id/tv_exp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

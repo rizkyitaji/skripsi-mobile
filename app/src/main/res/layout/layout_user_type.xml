@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_bg_white"
+    android:orientation="vertical"
+    android:paddingVertical="8dp">
+
+    <TextView
+        android:id="@+id/tv_choose"
+        style="@style/Text.DarkBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:text="@string/choose"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginVertical="8dp"
+        android:background="@color/colorGrey" />
+
+    <TextView
+        android:id="@+id/tv_mhs"
+        style="@style/Text.DarkBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_selector_white"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:text="@string/mahasiswa"
+        app:drawableStartCompat="@drawable/ic_person_dark" />
+
+    <TextView
+        android:id="@+id/tv_dosen"
+        style="@style/Text.DarkBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_selector_white"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:text="@string/dosen"
+        app:drawableStartCompat="@drawable/ic_person_dark" />
+</LinearLayout>

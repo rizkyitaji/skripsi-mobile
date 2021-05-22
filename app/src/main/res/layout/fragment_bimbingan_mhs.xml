@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".home.bimbingan.BimbinganMHSFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightBlue">
+
+        <TextView
+            android:id="@+id/toolbar"
+            style="@style/TextView.TitleLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/bimbingan"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dosen"
+            style="@style/Text.White"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:paddingVertical="10dp"
+            android:text="@string/pembimbing"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_dosen" />
+
+        <TextView
+            android:id="@+id/space1"
+            style="@style/Text.Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:paddingVertical="9dp"
+            android:text="@string/space"
+            app:layout_constraintEnd_toStartOf="@id/tv_dosen"
+            app:layout_constraintStart_toEndOf="@id/dosen"
+            app:layout_constraintTop_toTopOf="@id/tv_dosen" />
+
+        <TextView
+            android:id="@+id/tv_dosen"
+            style="@style/Text.White"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:maxLines="2"
+            android:paddingVertical="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space1"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <TextView
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:paddingVertical="10dp"
+            android:text="@string/judul"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dosen" />
+
+        <TextView
+            android:id="@+id/space2"
+            style="@style/Text.Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:paddingVertical="9dp"
+            android:text="@string/space"
+            app:layout_constraintEnd_toStartOf="@id/tv_title"
+            app:layout_constraintStart_toEndOf="@id/dosen"
+            app:layout_constraintTop_toTopOf="@id/tv_title" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/Text.White"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="24dp"
+            android:justificationMode="inter_word"
+            android:paddingVertical="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space2"
+            app:layout_constraintTop_toBottomOf="@id/tv_dosen"
+            tools:targetApi="o" />
+
+        <LinearLayout
+            android:id="@+id/layout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+            <TextView
+                android:id="@+id/btn_view"
+                style="@style/TextView.Bold"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/btn_selector_bluesky"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="4dp"
+                android:text="@string/lihat_profil"
+                android:textAlignment="center"
+                app:drawableEndCompat="@drawable/ic_open_in_new" />
+
+            <TextView
+                android:id="@+id/btn_bimbingan"
+                style="@style/TextView.Bold"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_selector_bluesky"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="4dp"
+                android:text="@string/bimbingan"
+                android:textAlignment="center"
+                app:drawableEndCompat="@drawable/ic_baseline_create" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_button">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_bimbingan"
+                    style="@style/TextView.Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/shape_btn_darkblue"
+                    android:paddingVertical="8dp"
+                    android:text="@string/catatan_bimbingan"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_none"
+                    style="@style/Text.Blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginVertical="40dp"
+                    android:drawablePadding="16dp"
+                    android:gravity="center"
+                    android:text="@string/anda_belum_melakukan_bimbingan"
+                    app:drawableTopCompat="@drawable/ic_undraw_empty"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_bimbingan" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_bimbingan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_bimbingan"
+                    android:layout_marginVertical="10dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_bimbingan" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

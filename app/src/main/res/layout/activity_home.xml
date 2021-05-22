@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    tools:context=".home.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/layout_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="-22dp"
+        android:layout_above="@id/bottomnav"/>
+
+    <FrameLayout
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/shape_rounded_top_white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_home_active"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/iv_assignment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_assignment"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/iv_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/iv_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_event"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_person"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/iv_storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_img_selector_blue_white"
+            android:padding="10dp"
+            android:src="@drawable/ic_school_white"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
+</RelativeLayout>

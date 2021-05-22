@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBlue"
+    android:fillViewport="true"
+    tools:context=".home.event.EventFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/toolbar"
+                style="@style/TextView.TitleLight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/announcement"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_periode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_periode"
+                        style="@style/TextView.Bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_btn_darksky"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="10dp"
+                        android:text="Periode Ujian Skripsi"
+                        android:textAllCaps="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_feb"
+                        style="@style/TextView.DarkBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="1.     Bulan Februari"
+                        android:textAllCaps="false"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_periode" />
+
+                    <TextView
+                        android:id="@+id/tv_may"
+                        style="@style/TextView.DarkBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="2.    Bulan Mei"
+                        android:textAllCaps="false"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_feb" />
+
+                    <TextView
+                        android:id="@+id/tv_aug"
+                        style="@style/TextView.DarkBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="3.    Bulan Agustus"
+                        android:textAllCaps="false"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="@id/tv_oct"
+                        app:layout_constraintTop_toBottomOf="@id/tv_periode" />
+
+                    <TextView
+                        android:id="@+id/tv_oct"
+                        style="@style/TextView.DarkBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="32dp"
+                        android:text="4.    Bulan Oktober"
+                        android:textAllCaps="false"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_aug" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_periode">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_info"
+                        style="@style/TextView.Bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/shape_btn_darksky"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="10dp"
+                        android:text="@string/informasi_terbaru"
+                        android:textAllCaps="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_none"
+                        style="@style/Text.BlueBig"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="40dp"
+                        android:drawablePadding="16dp"
+                        android:gravity="center"
+                        android:text="@string/belum_ada_informasi"
+                        app:drawableTopCompat="@drawable/ic_undraw_notify"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_info" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_info" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/btn_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="23dp"
+            android:src="@drawable/fab_add"
+            app:menu_animationDelayPerItem="55"
+            app:menu_backgroundColor="@android:color/transparent"
+            app:menu_colorNormal="@color/colorAccent"
+            app:menu_colorPressed="#6FF"
+            app:menu_colorRipple="#99FFFFFF"
+            app:menu_fab_hide_animation="@anim/fab_scale_down"
+            app:menu_fab_show_animation="@anim/fab_scale_up"
+            app:menu_fab_size="normal"
+            app:menu_labels_colorNormal="#333"
+            app:menu_labels_colorPressed="#444"
+            app:menu_labels_colorRipple="#6FF"
+            app:menu_labels_cornerRadius="3dp"
+            app:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+            app:menu_labels_position="left"
+            app:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            app:menu_labels_textColor="@color/colorWhite"
+            app:menu_labels_textSize="12sp"
+            app:menu_openDirection="up">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_announcement"
+                app:fab_colorNormal="@color/colorAccent"
+                app:fab_colorPressed="#6FF"
+                app:fab_colorRipple="#99FFFFFF"
+                app:fab_label="Buat Pengumuman"
+                app:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_pdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_pdf"
+                app:fab_colorNormal="@color/colorAccent"
+                app:fab_colorPressed="#6FF"
+                app:fab_colorRipple="#99FFFFFF"
+                app:fab_label="Upload PDF"
+                app:fab_size="mini" />
+        </com.github.clans.fab.FloatingActionMenu>
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

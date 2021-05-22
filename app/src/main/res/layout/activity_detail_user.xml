@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".home.dashboard.user.DetailUserActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightBlue"
+        android:paddingBottom="24dp">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/TextView.TitleLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/user"
+                android:textAllCaps="true" />
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_keyboard_arrow_left"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/Text.Normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:paddingVertical="10dp"
+            android:text="@string/nama"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_name" />
+
+        <TextView
+            android:id="@+id/space1"
+            style="@style/Text.Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:paddingVertical="9dp"
+            android:text="@string/space"
+            app:layout_constraintEnd_toStartOf="@id/tv_name"
+            app:layout_constraintStart_toEndOf="@id/prodi"
+            app:layout_constraintTop_toTopOf="@id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/Text.Normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:maxLines="2"
+            android:paddingVertical="10dp"
+            android:text="@string/rizky_putra_itaji"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space1"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <TextView
+            android:id="@+id/textId"
+            style="@style/Text.Normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:paddingVertical="10dp"
+            android:text="@string/npm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_id" />
+
+        <TextView
+            android:id="@+id/space2"
+            style="@style/Text.Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:paddingVertical="9dp"
+            android:text="@string/space"
+            app:layout_constraintEnd_toStartOf="@id/tv_id"
+            app:layout_constraintStart_toEndOf="@id/prodi"
+            app:layout_constraintTop_toTopOf="@id/tv_id" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            style="@style/Text.Normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:paddingVertical="10dp"
+            android:text="@string/strip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space2"
+            app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+        <TextView
+            android:id="@+id/textProdi"
+            style="@style/Text.Normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:paddingVertical="10dp"
+            android:text="@string/program_studi"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_prodi" />
+
+        <TextView
+            android:id="@+id/prodi"
+            style="@style/Text.Normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:paddingVertical="10dp"
+            android:text="@string/program_studi"
+            android:textAllCaps="true"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_prodi" />
+
+        <TextView
+            android:id="@+id/space3"
+            style="@style/Text.Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:paddingVertical="9dp"
+            android:text="@string/space"
+            app:layout_constraintEnd_toStartOf="@id/tv_prodi"
+            app:layout_constraintStart_toEndOf="@id/prodi"
+            app:layout_constraintTop_toTopOf="@id/tv_prodi" />
+
+        <TextView
+            android:id="@+id/tv_prodi"
+            style="@style/Text.Normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:paddingVertical="10dp"
+            android:text="@string/strip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space3"
+            app:layout_constraintTop_toBottomOf="@id/tv_id" />
+
+        <TextView
+            android:id="@+id/textPassword"
+            style="@style/Text.Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:paddingVertical="10dp"
+            android:text="@string/password"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_password" />
+
+        <TextView
+            android:id="@+id/space4"
+            style="@style/Text.Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:paddingVertical="9dp"
+            android:text="@string/space"
+            app:layout_constraintEnd_toStartOf="@id/tv_password"
+            app:layout_constraintStart_toEndOf="@id/prodi"
+            app:layout_constraintTop_toTopOf="@id/tv_password" />
+
+        <TextView
+            android:id="@+id/tv_password"
+            style="@style/Text.Normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:paddingVertical="10dp"
+            android:text="@string/strip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space4"
+            app:layout_constraintTop_toBottomOf="@id/tv_prodi" />
+
+        <TextView
+            android:id="@+id/textPhone"
+            style="@style/Text.Normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:paddingVertical="10dp"
+            android:text="@string/phone"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_phone" />
+
+        <TextView
+            android:id="@+id/space5"
+            style="@style/Text.Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:paddingVertical="9dp"
+            android:text="@string/space"
+            app:layout_constraintEnd_toStartOf="@id/tv_phone"
+            app:layout_constraintStart_toEndOf="@id/prodi"
+            app:layout_constraintTop_toTopOf="@id/tv_phone" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/Text.Normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:paddingVertical="10dp"
+            android:text="@string/strip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space5"
+            app:layout_constraintTop_toBottomOf="@id/tv_password" />
+
+        <TextView
+            android:id="@+id/textWA"
+            style="@style/Text.Normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:paddingVertical="10dp"
+            android:text="@string/whatsapp"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_whatsapp" />
+
+        <TextView
+            android:id="@+id/space6"
+            style="@style/Text.Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:paddingVertical="9dp"
+            android:text="@string/space"
+            app:layout_constraintEnd_toStartOf="@id/tv_whatsapp"
+            app:layout_constraintStart_toEndOf="@id/prodi"
+            app:layout_constraintTop_toTopOf="@id/tv_whatsapp" />
+
+        <TextView
+            android:id="@+id/tv_whatsapp"
+            style="@style/Text.Normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:paddingVertical="10dp"
+            android:text="@string/strip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space6"
+            app:layout_constraintTop_toBottomOf="@id/tv_phone" />
+
+        <TextView
+            android:id="@+id/textEmail"
+            style="@style/Text.Normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:paddingVertical="10dp"
+            android:text="@string/email"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_email" />
+
+        <TextView
+            android:id="@+id/space7"
+            style="@style/Text.Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:paddingVertical="9dp"
+            android:text="@string/space"
+            app:layout_constraintEnd_toStartOf="@id/tv_email"
+            app:layout_constraintStart_toEndOf="@id/prodi"
+            app:layout_constraintTop_toTopOf="@id/tv_email" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            style="@style/Text.Normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:paddingVertical="10dp"
+            android:text="@string/strip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space7"
+            app:layout_constraintTop_toBottomOf="@id/tv_whatsapp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/colorLightBlue"
+            app:layout_constraintBottom_toTopOf="@id/btn_edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_email" />
+
+        <Button
+            android:id="@+id/btn_edit"
+            style="@style/Button.First"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/edit"
+            app:layout_constraintBottom_toTopOf="@id/btn_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_view"
+            style="@style/Button.Second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/view_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

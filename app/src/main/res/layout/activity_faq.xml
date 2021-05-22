@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBlue"
+    android:fillViewport="true"
+    tools:context=".setting.help.FAQActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/TextView.TitleLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/faq"
+                android:textAllCaps="true" />
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_keyboard_arrow_left"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="32dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_btn_white"
+                android:orientation="vertical"
+                android:paddingTop="30dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/itemOne"
+                    style="@style/Text.Dark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_selector_white"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="8dp"
+                    android:text="@string/bagaimana_cara_mengajukan_proposal"
+                    app:drawableStartCompat="@drawable/ic_baseline_lens" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey" />
+
+                <TextView
+                    android:id="@+id/itemTwo"
+                    style="@style/Text.Dark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_selector_white"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="8dp"
+                    android:text="@string/bagaimana_cara_mengedit_proposal_atau_mengganti_dosen_pembimbing"
+                    app:drawableStartCompat="@drawable/ic_baseline_lens" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey" />
+
+                <TextView
+                    android:id="@+id/itemThree"
+                    style="@style/Text.Dark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_selector_white"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="8dp"
+                    android:text="@string/bagaimana_cara_menghindari_kesamaan_topik_penelitian_saat_mengajukan_proposal"
+                    app:drawableStartCompat="@drawable/ic_baseline_lens" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextView.Bold"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_btn_darkbluecyan"
+                android:drawablePadding="16dp"
+                android:gravity="center|start"
+                android:padding="8dp"
+                android:paddingVertical="10dp"
+                android:text="@string/proposal"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                app:drawableStartCompat="@drawable/ic_school" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="32dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_btn_white"
+                android:orientation="vertical"
+                android:paddingTop="30dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/itemFour"
+                    style="@style/Text.Dark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_selector_white"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="8dp"
+                    android:text="@string/bagaimana_saya_dapat_memulai_bimbingan"
+                    app:drawableStartCompat="@drawable/ic_baseline_lens" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey" />
+
+                <TextView
+                    android:id="@+id/itemFive"
+                    style="@style/Text.Dark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_selector_white"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="8dp"
+                    android:text="@string/bagaimana_cara_menghubungi_dosen_pembimbing"
+                    app:drawableStartCompat="@drawable/ic_baseline_lens" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey" />
+
+                <TextView
+                    android:id="@+id/itemSix"
+                    style="@style/Text.Dark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_selector_white"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="8dp"
+                    android:text="@string/bagaimana_cara_menghubungi_mahasiswa"
+                    app:drawableStartCompat="@drawable/ic_baseline_lens" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey" />
+
+                <TextView
+                    android:id="@+id/itemSeven"
+                    style="@style/Text.Dark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_selector_white"
+                    android:drawablePadding="12dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="8dp"
+                    android:text="@string/dimana_saya_dapat_melihat_catatan_bimbingan"
+                    app:drawableStartCompat="@drawable/ic_baseline_lens" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextView.Bold"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_btn_darkbluecyan"
+                android:drawablePadding="16dp"
+                android:gravity="center|start"
+                android:padding="8dp"
+                android:paddingVertical="10dp"
+                android:text="@string/bimbingan"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                app:drawableStartCompat="@drawable/ic_assignment_white" />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

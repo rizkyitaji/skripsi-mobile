@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBlue"
+    android:fillViewport="true"
+    tools:context=".sign.signup.SignUpContactActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-12dp"
+            android:layout_marginEnd="-12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_keyboard_arrow_left"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/TextView.TitleLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/contact"
+                android:textAllCaps="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="32dp"
+            app:layout_constraintBottom_toTopOf="@id/btn_continue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/TextView.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hai_rizky_putra"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_detail"
+                style="@style/Text.White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_marginTop="16dp"
+                android:justificationMode="inter_word"
+                android:text="@string/detail_contact"
+                tools:targetApi="o" />
+
+            <LinearLayout
+                android:id="@+id/linear_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_detail"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/shape_bg_input"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="3.5dp">
+
+                <TextView
+                    style="@style/Text.Dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:gravity="center"
+                    android:text="@string/_62"
+                    app:drawableStartCompat="@drawable/ic_phone" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    style="@style/EditText.Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    tools:ignore="Autofill,LabelFor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_whatsapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_phone"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/shape_bg_input"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="3.5dp">
+
+                <TextView
+                    style="@style/Text.Dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:gravity="center"
+                    android:text="@string/_62"
+                    app:drawableStartCompat="@drawable/ic_whatsapp_dark" />
+
+                <EditText
+                    android:id="@+id/et_whatsapp"
+                    style="@style/EditText.WA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    tools:ignore="Autofill,LabelFor" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_email"
+                style="@style/EditText.Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_whatsapp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linear_whatsapp"
+                tools:ignore="Autofill,LabelFor" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_continue"
+            style="@style/Button.First"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/next"
+            app:layout_constraintBottom_toTopOf="@id/btn_skip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_skip"
+            style="@style/Button.Second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/skip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

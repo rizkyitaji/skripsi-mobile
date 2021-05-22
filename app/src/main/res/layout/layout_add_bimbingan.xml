@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rounded_top_bluesky"
+    android:orientation="vertical"
+    android:paddingVertical="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextView.LightBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:drawablePadding="12dp"
+            android:text="@string/bimbingan"
+            app:drawableStartCompat="@drawable/ic_baseline_create"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_baseline_close"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginVertical="8dp"
+        android:background="@color/colorWhite" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tanggal"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingVertical="11dp"
+            android:text="@string/tanggal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_date" />
+
+        <TextView
+            android:id="@+id/space1"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:paddingVertical="10dp"
+            android:text="@string/space"
+            app:layout_constraintStart_toEndOf="@id/keterangan"
+            app:layout_constraintTop_toTopOf="@id/tv_date" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:text="@string/select_date"
+            app:drawableEndCompat="@drawable/ic_baseline_event"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/keterangan"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingVertical="8dp"
+            android:text="@string/keterangan"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/et_detail" />
+
+        <TextView
+            android:id="@+id/space2"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:paddingVertical="7dp"
+            android:text="@string/space"
+            app:layout_constraintStart_toEndOf="@id/keterangan"
+            app:layout_constraintTop_toTopOf="@id/et_detail" />
+
+        <EditText
+            android:id="@+id/et_detail"
+            style="@style/EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:lines="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space2"
+            app:layout_constraintTop_toBottomOf="@id/tv_date"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/metode"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingVertical="10dp"
+            android:text="@string/bimbingan"
+            android:textAllCaps="true"
+            app:layout_constraintBottom_toBottomOf="@id/tv_offline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_offline" />
+
+        <TextView
+            android:id="@+id/space3"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:paddingVertical="10dp"
+            android:text="@string/space"
+            app:layout_constraintStart_toEndOf="@id/keterangan"
+            app:layout_constraintTop_toTopOf="@id/tv_offline" />
+
+        <ImageView
+            android:id="@+id/checkbox_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_check_box_outline"
+            app:layout_constraintBottom_toBottomOf="@id/tv_offline"
+            app:layout_constraintStart_toEndOf="@id/space3"
+            app:layout_constraintTop_toTopOf="@id/tv_offline"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/checkbox_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ic_check_box_outline"
+            app:layout_constraintBottom_toBottomOf="@id/tv_offline"
+            app:layout_constraintStart_toEndOf="@id/tv_offline"
+            app:layout_constraintTop_toTopOf="@id/tv_offline"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_offline"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="8dp"
+            android:paddingVertical="12dp"
+            android:text="@string/offline"
+            app:layout_constraintStart_toEndOf="@id/checkbox_one"
+            app:layout_constraintTop_toBottomOf="@id/et_detail" />
+
+        <TextView
+            android:id="@+id/tv_online"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="8dp"
+            android:paddingVertical="12dp"
+            android:text="@string/online"
+            app:layout_constraintStart_toEndOf="@id/checkbox_two"
+            app:layout_constraintTop_toBottomOf="@id/et_detail" />
+
+        <TextView
+            android:id="@+id/tv_revisi"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingVertical="8dp"
+            android:text="@string/catat_revisi"
+            android:textAllCaps="true"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/et_revisi" />
+
+        <TextView
+            android:id="@+id/space4"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:paddingVertical="7dp"
+            android:text="@string/space"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@id/keterangan"
+            app:layout_constraintTop_toTopOf="@id/et_revisi" />
+
+        <EditText
+            android:id="@+id/et_revisi"
+            style="@style/EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:lines="5"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space4"
+            app:layout_constraintTop_toBottomOf="@id/tv_online"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/tv_laporan"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingVertical="10dp"
+            android:text="@string/laporan"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/tv_upload"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_upload" />
+
+        <TextView
+            android:id="@+id/space5"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:paddingVertical="10dp"
+            android:text="@string/space"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@id/keterangan"
+            app:layout_constraintTop_toTopOf="@id/tv_upload" />
+
+        <TextView
+            android:id="@+id/tv_upload"
+            style="@style/EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:text="@string/upload_file"
+            android:visibility="gone"
+            app:drawableEndCompat="@drawable/ic_upload"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space5"
+            app:layout_constraintTop_toBottomOf="@id/et_revisi" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/Button.First"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="24dp"
+        android:text="@string/submit" />
+</LinearLayout>

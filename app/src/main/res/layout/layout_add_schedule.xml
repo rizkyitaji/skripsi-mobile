@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="4dp"
+    android:background="@drawable/shape_btn_bluesky"
+    android:orientation="vertical"
+    android:paddingVertical="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TextView.LightBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:drawablePadding="12dp"
+            android:text="@string/jadwal_bimbingan"
+            app:drawableStartCompat="@drawable/ic_baseline_create"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_baseline_close"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginVertical="8dp"
+        android:background="@color/colorWhite" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tv_senin"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingVertical="8dp"
+            android:text="@string/senin"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_mon" />
+
+        <TextView
+            android:id="@+id/space1"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="7dp"
+            android:text="@string/space"
+            app:layout_constraintStart_toEndOf="@id/tv_selasa"
+            app:layout_constraintTop_toTopOf="@id/tv_mon" />
+
+        <LinearLayout
+            android:id="@+id/tv_mon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space1"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/startMon"
+                style="@style/EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strip"
+                android:textAlignment="center" />
+
+            <TextView
+                style="@style/TextView.TitleLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="@string/strip" />
+
+            <TextView
+                android:id="@+id/endMon"
+                style="@style/EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strip"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/resetMon"
+                style="@style/Text.Normal"
+                android:background="@drawable/shape_btn_bluecyan"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/reset"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_selasa"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingVertical="8dp"
+            android:text="@string/selasa"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_tue" />
+
+        <TextView
+            android:id="@+id/space2"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="7dp"
+            android:text="@string/space"
+            app:layout_constraintStart_toEndOf="@id/tv_selasa"
+            app:layout_constraintTop_toTopOf="@id/tv_tue" />
+
+        <LinearLayout
+            android:id="@+id/tv_tue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space1"
+            app:layout_constraintTop_toBottomOf="@id/tv_mon">
+
+            <TextView
+                android:id="@+id/startTue"
+                style="@style/EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strip"
+                android:textAlignment="center" />
+
+            <TextView
+                style="@style/TextView.TitleLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="@string/strip" />
+
+            <TextView
+                android:id="@+id/endTue"
+                style="@style/EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strip"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/resetTue"
+                style="@style/Text.Normal"
+                android:background="@drawable/shape_btn_bluecyan"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/reset"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_rabu"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingVertical="8dp"
+            android:text="@string/rabu"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_wed" />
+
+        <TextView
+            android:id="@+id/space3"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="7dp"
+            android:text="@string/space"
+            app:layout_constraintStart_toEndOf="@id/tv_selasa"
+            app:layout_constraintTop_toTopOf="@id/tv_wed" />
+
+        <LinearLayout
+            android:id="@+id/tv_wed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space1"
+            app:layout_constraintTop_toBottomOf="@id/tv_tue">
+
+            <TextView
+                android:id="@+id/startWed"
+                style="@style/EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strip"
+                android:textAlignment="center" />
+
+            <TextView
+                style="@style/TextView.TitleLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="@string/strip" />
+
+            <TextView
+                android:id="@+id/endWed"
+                style="@style/EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strip"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/resetWed"
+                style="@style/Text.Normal"
+                android:background="@drawable/shape_btn_bluecyan"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/reset"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_kamis"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingVertical="8dp"
+            android:text="@string/kamis"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_thu" />
+
+        <TextView
+            android:id="@+id/space4"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="7dp"
+            android:text="@string/space"
+            app:layout_constraintStart_toEndOf="@id/tv_selasa"
+            app:layout_constraintTop_toTopOf="@id/tv_thu" />
+
+        <LinearLayout
+            android:id="@+id/tv_thu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space1"
+            app:layout_constraintTop_toBottomOf="@id/tv_wed">
+
+            <TextView
+                android:id="@+id/startThu"
+                style="@style/EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strip"
+                android:textAlignment="center" />
+
+            <TextView
+                style="@style/TextView.TitleLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="@string/strip" />
+
+            <TextView
+                android:id="@+id/endThu"
+                style="@style/EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strip"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/resetThu"
+                style="@style/Text.Normal"
+                android:background="@drawable/shape_btn_bluecyan"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/reset"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_jumat"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingVertical="8dp"
+            android:text="@string/jumat"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_fri" />
+
+        <TextView
+            android:id="@+id/space5"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="7dp"
+            android:text="@string/space"
+            app:layout_constraintStart_toEndOf="@id/tv_selasa"
+            app:layout_constraintTop_toTopOf="@id/tv_fri" />
+
+        <LinearLayout
+            android:id="@+id/tv_fri"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space1"
+            app:layout_constraintTop_toBottomOf="@id/tv_thu">
+
+            <TextView
+                android:id="@+id/startFri"
+                style="@style/EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strip"
+                android:textAlignment="center" />
+
+            <TextView
+                style="@style/TextView.TitleLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="@string/strip" />
+
+            <TextView
+                android:id="@+id/endFri"
+                style="@style/EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strip"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/resetFri"
+                style="@style/Text.Normal"
+                android:background="@drawable/shape_btn_bluecyan"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/reset"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_sabtu"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingVertical="8dp"
+            android:text="@string/sabtu"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_sat" />
+
+        <TextView
+            android:id="@+id/space6"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="7dp"
+            android:text="@string/space"
+            app:layout_constraintStart_toEndOf="@id/tv_selasa"
+            app:layout_constraintTop_toTopOf="@id/tv_sat" />
+
+        <LinearLayout
+            android:id="@+id/tv_sat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space1"
+            app:layout_constraintTop_toBottomOf="@id/tv_fri">
+
+            <TextView
+                android:id="@+id/startSat"
+                style="@style/EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strip"
+                android:textAlignment="center" />
+
+            <TextView
+                style="@style/TextView.TitleLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="@string/strip" />
+
+            <TextView
+                android:id="@+id/endSat"
+                style="@style/EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strip"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/resetSat"
+                style="@style/Text.Normal"
+                android:background="@drawable/shape_btn_bluecyan"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/reset"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_minggu"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingVertical="8dp"
+            android:text="@string/minggu"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_sun" />
+
+        <TextView
+            android:id="@+id/space7"
+            style="@style/Text.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="7dp"
+            android:text="@string/space"
+            app:layout_constraintStart_toEndOf="@id/tv_selasa"
+            app:layout_constraintTop_toTopOf="@id/tv_sun" />
+
+        <LinearLayout
+            android:id="@+id/tv_sun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/space1"
+            app:layout_constraintTop_toBottomOf="@id/tv_sat">
+
+            <TextView
+                android:id="@+id/startSun"
+                style="@style/EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strip"
+                android:textAlignment="center" />
+
+            <TextView
+                style="@style/TextView.TitleLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="@string/strip" />
+
+            <TextView
+                android:id="@+id/endSun"
+                style="@style/EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strip"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/resetSun"
+                style="@style/Text.Normal"
+                android:background="@drawable/shape_btn_bluecyan"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/reset" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/Button.First"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="24dp"
+        android:text="@string/submit" />
+</LinearLayout>

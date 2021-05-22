@@ -1,0 +1,186 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorLightBlue</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>
+
+    <style name="AppTheme.FullScreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="EditTextView" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/shape_bg_input</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:textColor">@color/colorDarkCyan</item>
+        <item name="android:textColorHint">@color/colorDarkCyan</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/shape_bg_input</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:textColor">@color/colorDarkCyan</item>
+        <item name="android:textColorHint">@color/colorDarkCyan</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="EditText.ID">
+        <item name="android:drawableStart">@drawable/ic_person_dark</item>
+        <item name="android:hint">ID</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="EditText.Password">
+        <item name="android:drawableStart">@drawable/ic_lock</item>
+        <item name="android:hint">Password</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="EditText.Search">
+        <item name="android:hint">Search</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="EditText.Phone">
+        <item name="android:hint">Phone Number</item>
+        <item name="android:inputType">phone</item>
+    </style>
+
+    <style name="EditText.WA">
+        <item name="android:hint">Whatsapp Number</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="EditText.Email">
+        <item name="android:drawableStart">@drawable/ic_email</item>
+        <item name="android:hint">Email Address</item>
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+
+    <style name="Button" parent="TextAppearance.AppCompat.Button">
+        <item name="fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="Button.First">
+        <item name="android:background">@drawable/btn_selector_blue</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="Button.Second">
+        <item name="android:background">@drawable/btn_selector_bluesky</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="Button.Third">
+        <item name="android:background">@drawable/btn_selector_green</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="Button.Fourth">
+        <item name="android:background">@drawable/btn_selector_lightblue</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="TextView" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="TextView.Bold">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="TextView.DarkBold">
+        <item name="android:textColor">@color/colorBlueCyan</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextView.LightBold">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextView.TitleLight">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextView.TitleDark">
+        <item name="android:textColor">@color/colorBlueCyan</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Text" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="Text.Blue">
+        <item name="android:textColor">@color/colorBlueCyan</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Text.BlueBig">
+        <item name="android:textColor">@color/colorBlueCyan</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Text.Dark">
+        <item name="android:textColor">@color/colorDarkCyan</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Text.DarkBig">
+        <item name="android:textColor">@color/colorDarkCyan</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Text.Normal">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Text.White">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Text.Equal">
+        <item name="android:text">:</item>
+        <item name="android:textColor">@color/colorDarkCyan</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:editTextColor">@color/colorDarkCyan</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

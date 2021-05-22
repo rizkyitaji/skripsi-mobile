@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBlue"
+    android:fillViewport="true"
+    tools:context=".sign.signup.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-12dp"
+            android:layout_marginEnd="-12dp">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_keyboard_arrow_left"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/TextView.TitleLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/sign_up" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="32dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/usertype"
+                style="@style/Text.White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jenis_user" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/usertype"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_bg_input">
+
+                <TextView
+                    android:id="@+id/tv_user"
+                    style="@style/Text.Dark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="12dp"
+                    android:text="@string/choose"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    app:drawableEndCompat="@drawable/ic_expand_more"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/Text.White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_user"
+                android:layout_marginTop="16dp"
+                android:text="@string/full_name" />
+
+            <EditText
+                android:id="@+id/et_name"
+                style="@style/EditTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginTop="8dp"
+                android:inputType="textCapWords"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="12dp"
+                tools:ignore="Autofill,LabelFor" />
+
+            <TextView
+                android:id="@+id/prodi"
+                style="@style/Text.White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_name"
+                android:layout_marginTop="16dp"
+                android:text="@string/program_studi" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_prodi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/prodi"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_bg_input">
+
+                <TextView
+                    android:id="@+id/tv_prodi"
+                    style="@style/Text.Dark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="12dp"
+                    android:text="@string/choose"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    app:drawableEndCompat="@drawable/ic_expand_more"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_id"
+                style="@style/Text.White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_prodi"
+                android:layout_marginTop="16dp"
+                android:text="@string/id_nidn" />
+
+            <LinearLayout
+                android:id="@+id/layout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_id"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/et_frontId"
+                    style="@style/EditTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="12dp"
+                    android:textAlignment="center"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/tv_strip_one"
+                    style="@style/TextView.TitleLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:text="@string/strip" />
+
+                <TextView
+                    android:id="@+id/tv_midId"
+                    style="@style/EditTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="12dp"
+                    android:text="@string/_03015"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tv_strip_two"
+                    style="@style/TextView.TitleLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:text="@string/strip" />
+
+                <EditText
+                    android:id="@+id/et_backId"
+                    style="@style/EditTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:inputType="number"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="12dp"
+                    tools:ignore="Autofill,LabelFor" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_password"
+                style="@style/Text.White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_id"
+                android:layout_marginTop="16dp"
+                android:text="@string/password" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_password"
+                android:layout_marginTop="8dp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorDarkCyan">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_password"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_continue"
+            style="@style/Button.First"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

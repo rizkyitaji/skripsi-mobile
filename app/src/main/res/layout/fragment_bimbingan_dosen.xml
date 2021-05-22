@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".home.bimbingan.BimbinganDosenFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightBlue">
+
+        <TextView
+            android:id="@+id/toolbar"
+            style="@style/TextView.TitleLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/bimbingan"
+            android:textAlignment="center"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:id="@+id/layout_daftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_daftar"
+                style="@style/Text.White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/daftar_mahasiswa_bimbingan" />
+
+            <TextView
+                android:id="@+id/tv_space"
+                style="@style/Text.White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="@string/space"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/toolbar"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv_none"
+                style="@style/TextView.Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="16dp"
+                android:gravity="center"
+                android:text="@string/daftar_mahasiswa_bimbingan_belum_ada"
+                android:textSize="14sp"
+                app:drawableTopCompat="@drawable/ic_undraw_math" />
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_daftar_mhs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_daftar"
+            android:layout_marginTop="16dp" />
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

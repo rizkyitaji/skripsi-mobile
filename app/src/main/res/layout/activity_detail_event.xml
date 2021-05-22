@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBlue"
+    android:orientation="vertical"
+    tools:context=".home.event.DetailEventActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            style="@style/TextView.TitleLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/announcement"
+            android:textAllCaps="true" />
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_keyboard_arrow_left"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/Text.White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:text="@string/judul"
+        android:textAlignment="center"
+        android:textAllCaps="true" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/sv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="32dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_detail"
+            style="@style/Text.Normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="@string/lorem_ipsum"
+            tools:targetApi="o" />
+    </androidx.core.widget.NestedScrollView>
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="32dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_download"
+        style="@style/Button.First"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/download" />
+
+</LinearLayout>

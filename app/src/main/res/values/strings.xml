@@ -1,0 +1,178 @@
+<resources>
+    <string name="app_name">Skripsi Mobile</string>
+    <string name="goto_signup">Don\'t have an account?</string>
+    <string name="home">HOME</string>
+    <string name="proposal_list">Daftar Proposal</string>
+    <string name="repository">Repository</string>
+    <string name="rizky_putra_itaji">Rizky Putra Itaji</string>
+    <string name="pembimbing">Pembimbing</string>
+    <string name="judul">Judul</string>
+    <string name="status">Status</string>
+    <string name="nama_dosen">Nama Dosen</string>
+    <string name="sistem_informasi_bimbingan_skripsi">Sistem Informasi Bimbingan Skripsi</string>
+    <string name="waiting">Waiting for Approval</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="id">ID</string>
+    <string name="password">Password</string>
+    <string name="next">Continue</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="teknik_informatika">Teknik Informatika</string>
+    <string name="welcome">Welcome !</string>
+    <string name="teknik_elektro">Teknik Elektro</string>
+    <string name="teknik_mesin">Teknik Mesin</string>
+    <string name="setting">setting</string>
+    <string name="pilih_program_studi">Pilih Program Studi :</string>
+    <string name="ti">TI</string>
+    <string name="te">TE</string>
+    <string name="tm">TM</string>
+    <string name="_1">1</string>
+    <string name="bimbingan">Bimbingan</string>
+    <string name="space">:</string>
+    <string name="view_profile">View Profile</string>
+    <string name="skip">Skip</string>
+    <string name="contact">Contact</string>
+    <string name="_62">+62</string>
+    <string name="detail_contact">Silakan tambahkan nomor handphone, nomor whatsapp, dan alamat email Anda agar dapat dihubungi dengan mudah!</string>
+    <string name="photo">Photo</string>
+    <string name="save_and_continue">Save And Continue</string>
+    <string name="hai_rizky_putra">Hai, Rizky Putra !</string>
+    <string name="upload_later">Upload Later</string>
+    <string name="skripsi">Skripsi</string>
+    <string name="informasi_terbaru">Informasi Terbaru</string>
+    <string name="profile">Profile</string>
+    <string name="nim">1603015016</string>
+    <string name="program_studi">Program Studi</string>
+    <string name="mahasiswa">Mahasiswa</string>
+    <string name="dosen">Dosen</string>
+    <string name="account">Account</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="whatsapp_number">Whatsapp Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="help">Help</string>
+    <string name="sign_out">SIGN OUT</string>
+    <string name="select_user">SELECT USER</string>
+    <string name="daftar_mahasiswa_bimbingan">Daftar Mahasiswa Bimbingan</string>
+    <string name="nama">NAMA</string>
+    <string name="npm">NIM</string>
+    <string name="prodi">PRODI</string>
+    <string name="proposal">Proposal</string>
+    <string name="none">None</string>
+    <string name="submit">Submit</string>
+    <string name="view_proposal">View Proposal</string>
+    <string name="homepage">Homepage</string>
+    <string name="success">SUCCESS !</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="dosen_pembimbing">Dosen Pembimbing</string>
+    <string name="choose">Choose</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.</string>
+    <string name="bidang_keahlian">Bidang Keahlian</string>
+    <string name="edit_proposal">EDIT PROPOSAL</string>
+    <string name="jadwal_bimbingan">Jadwal Bimbingan</string>
+    <string name="add">ADD</string>
+    <string name="selasa">Selasa</string>
+    <string name="senin">Senin</string>
+    <string name="rabu">Rabu</string>
+    <string name="kamis">Kamis</string>
+    <string name="jumat">Jum\'at</string>
+    <string name="sabtu">Sabtu</string>
+    <string name="minggu">Minggu</string>
+    <string name="approve">APPROVE</string>
+    <string name="reject">REJECT</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="keterangan">Keterangan</string>
+    <string name="tanggal">TANGGAL</string>
+    <string name="announcement">Announcement</string>
+    <string name="download">Download</string>
+    <string name="notif">"Proposal Anda telah berhasil diajukan! \nSilakan tunggu konfirmasi selanjutnya dari \ndosen pembimbing pilihan Anda!"</string>
+    <string name="strip">-</string>
+    <string name="admin">Admin</string>
+    <string name="daftar_dosen_pembimbing">Daftar Dosen\nPembimbing</string>
+    <string name="daftar_proposal">Daftar\nProposal</string>
+    <string name="daftar_user">Daftar User</string>
+    <string name="edit">EDIT</string>
+    <string name="action">ACTION</string>
+    <string name="_03015">03015</string>
+    <string name="jenis_user">Jenis User</string>
+    <string name="upload_photo_from_gallery">Upload Photo from Gallery</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="remove_photo">Remove Photo</string>
+    <string name="welcome_admin">Welcome Admin !</string>
+    <string name="save">SAVE</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="current_phone_number">Current Phone Number</string>
+    <string name="current_whatsapp_number">Current Whatsapp Number</string>
+    <string name="current_email_address">Current Email Address</string>
+    <string name="new_phone_number">New Phone Number</string>
+    <string name="new_email_address">New Email Address</string>
+    <string name="new_whatsapp_number">New Whatsapp Number</string>
+    <string name="current_phone_number_is_not_set">Current phone number is not set</string>
+    <string name="current_email_address_is_not_set">Current email address is not set</string>
+    <string name="current_whatsapp_number_is_not_set">Current whatsapp number is not set</string>
+    <string name="user">User</string>
+    <string name="nidn">NIDN</string>
+    <string name="phone">Phone</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="email">Email</string>
+    <string name="tandai_lulus">Tandai Lulus</string>
+    <string name="catatan_bimbingan">Catatan Bimbingan</string>
+    <string name="lihat_profil">Lihat Profil</string>
+    <string name="select_date">Select Date</string>
+    <string name="reset">RESET</string>
+    <string name="laporan">LAPORAN</string>
+    <string name="revisi">REVISI :</string>
+    <string name="lembar_bimbingan">Lembar Bimbingan</string>
+    <string name="upload">upload</string>
+    <string name="download_hasil_revisi_di_sini">Download Hasil Revisi di sini :</string>
+    <string name="catat_revisi">Catat Revisi</string>
+    <string name="upload_file">Upload File</string>
+    <string name="offline">Offline</string>
+    <string name="online">Online</string>
+    <string name="upload_hasil_revisi_di_sini">Upload Hasil Revisi di sini :</string>
+    <string name="pengumuman">Pengumuman</string>
+    <string name="isi">Isi</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="faq">FAQ</string>
+    <string name="id_nim">ID / NIM</string>
+    <string name="id_nidn">ID / NIDN</string>
+    <string name="edit_data">Edit Data</string>
+    <string name="delete">Delete</string>
+    <string name="view_detail">View Detail</string>
+    <string name="bagaimana_cara_mengajukan_proposal">Bagaimana cara mengajukan proposal?</string>
+    <string name="bagaimana_cara_mengedit_proposal_atau_mengganti_dosen_pembimbing">Bagaimana cara mengedit proposal atau mengganti dosen pembimbing?</string>
+    <string name="bagaimana_cara_menghindari_kesamaan_topik_penelitian_saat_mengajukan_proposal">Bagaimana cara menghindari kesamaan topik penelitian saat mengajukan proposal?</string>
+    <string name="bagaimana_saya_dapat_memulai_bimbingan">Bagaimana saya dapat memulai bimbingan?</string>
+    <string name="bagaimana_cara_menghubungi_dosen_pembimbing">Bagaimana cara menghubungi dosen pembimbing?</string>
+    <string name="bagaimana_cara_menghubungi_mahasiswa">Bagaimana cara menghubungi mahasiswa?</string>
+    <string name="dimana_saya_dapat_melihat_catatan_bimbingan">Dimana saya dapat melihat catatan bimbingan?</string>
+    <string name="belum_ada_proposal">Belum ada proposal</string>
+    <string name="buat_proposal">Buat Proposal</string>
+    <string name="belum_ada_informasi">Belum ada informasi</string>
+    <string name="anda_belum_melakukan_bimbingan">Anda belum melakukan bimbingan</string>
+    <string name="belum_ada_catatan_bimbingan">Belum ada catatan bimbingan</string>
+    <string name="hasil_pencarian">Hasil pencarian tidak ditemukan</string>
+    <string name="daftar_dosen_pembimbing_nbelum_ada">Daftar dosen pembimbing\nbelum ada</string>
+    <string name="tidak_ada_koneksi_internet">Tidak ada koneksi internet</string>
+    <string name="daftar_mahasiswa_bimbingan_belum_ada">Daftar mahasiswa\nbimbingan belum ada</string>
+</resources>

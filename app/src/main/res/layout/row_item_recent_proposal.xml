@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorLightBlue">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="20dp"
+        app:contentPaddingBottom="12dp"
+        app:contentPaddingLeft="16dp"
+        app:contentPaddingTop="12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_pembimbing"
+                style="@style/Text.Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pembimbing"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@id/tv_pembimbing"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    style="@style/Text.Blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/space" />
+
+                <TextView
+                    style="@style/Text.Blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/space" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_dosen"
+                style="@style/Text.Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="1dp"
+                android:text="@string/nama_dosen"
+                app:layout_constraintStart_toEndOf="@id/space"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/Text.Blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/judul"
+                app:layout_constraintEnd_toStartOf="@id/space"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_pembimbing" />
+
+            <TextView
+                android:id="@+id/tv_judul"
+                style="@style/Text.Blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:justificationMode="inter_word"
+                android:text="@string/sistem_informasi_bimbingan_skripsi"
+                app:layout_constraintEnd_toStartOf="@id/btn_action"
+                app:layout_constraintStart_toEndOf="@id/space"
+                app:layout_constraintTop_toBottomOf="@id/tv_dosen"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/tv_stat"
+                style="@style/Text.Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/status"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_judul" />
+
+            <TextView
+                style="@style/Text.Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/space"
+                app:layout_constraintStart_toEndOf="@id/tv_pembimbing"
+                app:layout_constraintTop_toBottomOf="@id/tv_judul" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                style="@style/Text.Blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/waiting"
+                app:layout_constraintEnd_toStartOf="@id/btn_action"
+                app:layout_constraintStart_toEndOf="@id/space"
+                app:layout_constraintTop_toBottomOf="@id/tv_judul" />
+
+            <ImageView
+                android:id="@+id/btn_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/btn_img_selector_grey"
+                android:padding="8dp"
+                android:src="@drawable/ic_keyboard_arrow_right"
+                app:layout_constraintBottom_toTopOf="@id/tv_status"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_judul"
+                app:layout_constraintTop_toBottomOf="@id/tv_dosen"
+                tools:ignore="ContentDescription" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

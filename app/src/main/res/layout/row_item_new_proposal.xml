@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorLightBlue">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="8dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="20dp"
+        app:contentPaddingBottom="10dp"
+        app:contentPaddingLeft="10dp"
+        app:contentPaddingTop="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_mhs"
+                style="@style/Text.Blue"
+                android:layout_width="47dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="1dp"
+                android:text="@string/nama"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@id/tv_mhs"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    style="@style/Text.Blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/space" />
+
+                <TextView
+                    style="@style/Text.Blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/space" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/Text.Blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="1dp"
+                android:text="@string/nama"
+                app:layout_constraintEnd_toStartOf="@id/btn_expand"
+                app:layout_constraintStart_toEndOf="@id/space"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_npm"
+                style="@style/Text.Blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/npm"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_mhs" />
+
+            <TextView
+                android:id="@+id/tv_nim"
+                style="@style/Text.Blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/nim"
+                app:layout_constraintEnd_toStartOf="@id/btn_expand"
+                app:layout_constraintStart_toEndOf="@id/space"
+                app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+            <TextView
+                android:id="@+id/tv_judul"
+                style="@style/Text.Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/judul"
+                android:textAllCaps="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_nim" />
+
+            <TextView
+                style="@style/Text.Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/space"
+                app:layout_constraintStart_toEndOf="@id/tv_mhs"
+                app:layout_constraintTop_toBottomOf="@id/tv_npm" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/Text.Blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/sistem_informasi_bimbingan_skripsi"
+                app:layout_constraintEnd_toStartOf="@id/btn_expand"
+                app:layout_constraintStart_toEndOf="@id/space"
+                app:layout_constraintTop_toBottomOf="@id/tv_nim" />
+
+            <ImageView
+                android:id="@+id/btn_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/btn_img_selector_grey"
+                android:padding="8dp"
+                android:src="@drawable/ic_expand_more"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_nim"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/action"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_expand"
+                app:layout_constraintStart_toStartOf="@id/space"
+                app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+                <TextView
+                    android:id="@+id/btn_approve"
+                    style="@style/TextView.Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector_green"
+                    android:paddingHorizontal="6dp"
+                    android:paddingVertical="6dp"
+                    android:text="@string/approve"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btn_reject"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/btn_reject"
+                    style="@style/TextView.Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/btn_selector_red"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="6dp"
+                    android:text="@string/reject"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/btn_approve"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

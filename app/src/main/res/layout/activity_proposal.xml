@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBlue"
+    android:focusableInTouchMode="true"
+    tools:context=".home.dashboard.proposal.add.ProposalActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextView.TitleLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/proposal"
+            android:textAllCaps="true" />
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_keyboard_arrow_left"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/Text.Normal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:paddingVertical="10dp"
+        android:text="@string/nama"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toStartOf="@id/space1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/et_name" />
+
+    <TextView
+        android:id="@+id/space1"
+        style="@style/Text.Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:paddingVertical="9dp"
+        android:text="@string/space"
+        app:layout_constraintEnd_toStartOf="@id/et_name"
+        app:layout_constraintStart_toEndOf="@id/tv_dosen"
+        app:layout_constraintTop_toTopOf="@id/et_name" />
+
+    <EditText
+        android:id="@+id/et_name"
+        style="@style/EditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:inputType="textCapWords"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/space1"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/tv_nim"
+        style="@style/Text.Normal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:paddingVertical="10dp"
+        android:text="@string/npm"
+        app:layout_constraintEnd_toStartOf="@id/space2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/et_nim" />
+
+    <TextView
+        android:id="@+id/space2"
+        style="@style/Text.Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:paddingVertical="9dp"
+        android:text="@string/space"
+        app:layout_constraintEnd_toStartOf="@id/et_nim"
+        app:layout_constraintStart_toEndOf="@id/tv_dosen"
+        app:layout_constraintTop_toTopOf="@id/et_nim" />
+
+    <EditText
+        android:id="@+id/et_nim"
+        style="@style/EditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/space2"
+        app:layout_constraintTop_toBottomOf="@id/et_name"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/tv_program_studi"
+        style="@style/Text.Normal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:paddingVertical="10dp"
+        android:text="@string/prodi"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toStartOf="@id/space3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/option" />
+
+    <TextView
+        android:id="@+id/space3"
+        style="@style/Text.Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:paddingVertical="9dp"
+        android:text="@string/space"
+        app:layout_constraintEnd_toStartOf="@id/option"
+        app:layout_constraintStart_toEndOf="@id/tv_dosen"
+        app:layout_constraintTop_toTopOf="@id/option" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/option"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/shape_bg_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/space3"
+        app:layout_constraintTop_toBottomOf="@id/et_nim">
+
+        <TextView
+            android:id="@+id/tv_prodi"
+            style="@style/Text.Dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:text="@string/choose"
+            android:textAlignment="textStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/btn_prodi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:drawableEndCompat="@drawable/ic_expand_more"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_dosen"
+        style="@style/Text.Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:paddingVertical="10dp"
+        android:text="@string/pembimbing"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pembimbing" />
+
+    <TextView
+        android:id="@+id/space4"
+        style="@style/Text.Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:paddingVertical="9dp"
+        android:text="@string/space"
+        app:layout_constraintEnd_toStartOf="@id/pembimbing"
+        app:layout_constraintStart_toEndOf="@id/tv_dosen"
+        app:layout_constraintTop_toTopOf="@id/pembimbing" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pembimbing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/shape_bg_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/space4"
+        app:layout_constraintTop_toBottomOf="@id/option">
+
+        <TextView
+            android:id="@+id/tv_pembimbing"
+            style="@style/Text.Dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:text="@string/choose"
+            android:textAlignment="textStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/btn_dospem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:drawableEndCompat="@drawable/ic_expand_more"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_judul"
+        style="@style/Text.Normal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:paddingVertical="10dp"
+        android:text="@string/judul"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toStartOf="@id/space5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/et_judul" />
+
+    <TextView
+        android:id="@+id/space5"
+        style="@style/Text.Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:paddingVertical="9dp"
+        android:text="@string/space"
+        app:layout_constraintEnd_toStartOf="@id/et_judul"
+        app:layout_constraintStart_toEndOf="@id/tv_dosen"
+        app:layout_constraintTop_toTopOf="@id/et_judul" />
+
+    <EditText
+        android:id="@+id/et_judul"
+        style="@style/EditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:inputType="textCapWords"
+        android:hint="Isi dengan judul proposal Anda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/space5"
+        app:layout_constraintTop_toBottomOf="@id/pembimbing"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        style="@style/Text.Normal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:paddingVertical="10dp"
+        android:text="@string/deskripsi"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toStartOf="@id/space6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_judul" />
+
+    <TextView
+        android:id="@+id/space6"
+        style="@style/Text.Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:paddingVertical="9dp"
+        android:text="@string/space"
+        app:layout_constraintStart_toEndOf="@id/tv_dosen"
+        app:layout_constraintTop_toTopOf="@id/tv_desc" />
+
+    <EditText
+        android:id="@+id/et_desc"
+        style="@style/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="top"
+        android:hint="Isi dengan penjelasan singkat atau gambaran umum mengenai topik proposal skripsi Anda"
+        android:inputType="textCapSentences|textMultiLine"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@id/btn_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc"
+        tools:ignore="Autofill,LabelFor" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/Button.First"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
