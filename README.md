@@ -9,7 +9,6 @@
 * [Project Status](#project-status)
 <!-- * [Contact](#contact) -->
 
-
 ## General Information
 - Application for monitoring student progress in completing thesis report
 - Application to manage the guidance process with a tutor
@@ -19,11 +18,9 @@
 - Firebase Realtime Database
 - Firebase Storage
 
-
 ## Features
 - CRUD with Firebase Realtime Database
 - Upload files
-
 
 ## Screenshots
 <p align="center">
@@ -33,7 +30,7 @@
 </p>
 
 ## Project Status
-Project is : _complete_
+Project is : _Complete_.
 
 <!-- ## Contact -->
 <!-- Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me! -->
