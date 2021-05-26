@@ -126,31 +126,36 @@ class SettingActivity : AppCompatActivity() {
 
             val delete = v.findViewById<LinearLayout>(R.id.delete)
             delete.setOnClickListener {
-                ref.addListenerForSingleValueEvent(object : ValueEventListener {
-                    override fun onDataChange(snapshot: DataSnapshot) {
-                        val photo = snapshot.child("photo").value.toString()
-                        if (!photo.equals("null")) {
-                            preferences.setValues("uri", "0")
-                            ref.child("photo").removeValue()
+                if (isConnected()) {
+                    ref.addListenerForSingleValueEvent(object : ValueEventListener {
+                        override fun onDataChange(snapshot: DataSnapshot) {
+                            val photo = snapshot.child("photo").value.toString()
+                            if (!photo.equals("null")) {
+                                ref.child("photo").removeValue()
+                                iv_profile.setImageResource(R.drawable.ic_account_circle)
 
-                            val imgRef = FirebaseStorage.getInstance().getReference("images/" + id)
-                            imgRef.delete()
-                                    .addOnSuccessListener {
-                                        Toast.makeText(this@SettingActivity, "Foto telah dihapus", Toast.LENGTH_SHORT).show()
-                                    }
+                                val imgRef = FirebaseStorage.getInstance().getReference("images/" + id)
+                                imgRef.delete()
+                                        .addOnSuccessListener {
+                                            Toast.makeText(this@SettingActivity, "Foto telah dihapus", Toast.LENGTH_SHORT).show()
+                                        }
 
-                                    .addOnFailureListener {
-                                        Toast.makeText(this@SettingActivity, "Error", Toast.LENGTH_SHORT).show()
-                                    }
-                        } else {
-                            Toast.makeText(this@SettingActivity, "Anda belum mengunggah foto", Toast.LENGTH_SHORT).show()
+                                        .addOnFailureListener {
+                                            Toast.makeText(this@SettingActivity, "Error", Toast.LENGTH_SHORT).show()
+                                        }
+                            } else {
+                                Toast.makeText(this@SettingActivity, "Anda belum mengunggah foto", Toast.LENGTH_SHORT).show()
+                            }
+                            dialog.dismiss()
                         }
-                    }
 
-                    override fun onCancelled(error: DatabaseError) {
-                        Toast.makeText(this@SettingActivity, "" + error.message, Toast.LENGTH_SHORT).show()
-                    }
-                })
+                        override fun onCancelled(error: DatabaseError) {
+                            Toast.makeText(this@SettingActivity, error.message, Toast.LENGTH_SHORT).show()
+                        }
+                    })
+                } else {
+                    Toast.makeText(this, "No Internet Connection", Toast.LENGTH_SHORT).show()
+                }
             }
         }
 
