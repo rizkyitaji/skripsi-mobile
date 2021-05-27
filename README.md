@@ -20,7 +20,8 @@
 
 ## Features
 - CRUD with Firebase Realtime Database
-- Upload files
+- Upload and download files
+- Push notification
 
 ## Screenshots
 <p align="center">
