@@ -6,6 +6,7 @@
 * [Technologies Used](#technologies-used)
 * [Features](#features)
 * [Screenshots](#screenshots)
+* [Usage](#usage)
 * [Project Status](#project-status)
 <!-- * [Contact](#contact) -->
 
@@ -29,6 +30,13 @@
   <img width="250" src="https://user-images.githubusercontent.com/83572055/119519590-c35e7b00-bda3-11eb-92c3-4bd5ea8ea0cf.jpg">
   <img width="250" src="https://user-images.githubusercontent.com/83572055/119520156-3ec02c80-bda4-11eb-9f96-b54ad25716f8.jpg">
 </p>
+
+## Usage
+`Android`
+  - Create firebase project
+  - Connect firebase to android app
+  - Download google-service.json
+  - Place it at project_name/android/app/ directory  
 
 ## Project Status
 Project is : _Complete_.
